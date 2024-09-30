@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <title>Survey Form</title>
+   <link rel="stylesheet" href="styles.css"/>
+  </head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p>I am conducting a survey among the people I know</p>
+  <form id="survey-form"method="post"action="https://register-demo.freecodecamp.org" >
+   <fieldset>
+      <label for="name-label">Name: <input id="name-label"name="name1"type="text"placeholder="Enter name"required /></label>
+      <label for="email-label">Email: <input id="email-label"name="email1"type="email"placeholder="example@email.com"required /></label>
+      <label for="age-label">Age: <input id="age-label"name="age1"type="number"min="13"max="150"placeholder="13 to 150"required /></label>
+    </fieldset>
+   <fieldset>
+    <legend>Gender</legend>
+    <label for="male"><input id="male"name="gender"type="radio"class="inline"checked> Male</label>
+    <label for="female"><input id="female"name="gender"type="radio"class="inline"> Female</label>
+    <label for="unknown"><input id="unknown"name="gender"type="radio"class="inline"> Rather not to say</label>
+    </fieldset>
+  <fieldset>
+   <label for="dropdown">Who are you to me?</label> 
+   <select id="dropdown" required>
+     <option value="">(select one)</option>
+     <option value="1">Close Friend</option>
+     <option value="2">Family Member</option>
+     <option value="3">Friend from a Friend</option>
+     <option value="4">Schoolmate</option>
+     <option value="5">Stranger</option>
+    </select>
+   </fieldset>
+  <fieldset>
+   <Legend>Hobbies</legend>
+    <label for="art"><input id="art"type="checkbox"class="checkbox"/> Arts & Crafts</label>
+    <label for="cook"><input id="cook"type="checkbox"class="checkbox"/> Baking / Cooking</label>
+    <label for="fit"><input id="fit"type="checkbox"class="checkbox"/> Fitness & Exercise</label>
+    <label for="game"><input id="game"type="checkbox"class="checkbox"/> Gaming</label>
+    <label for="garden"><input id="garden"type="checkbox"class="checkbox"/> Gardening</label>
+    <label for="music"><input id="music"type="checkbox"class="checkbox"/> Musics</label>
+    <label for="photo"><input id="photo"type="checkbox"class="checkbox"/> Photography</label>
+    <label for="read"><input id="read"type="checkbox"class="checkbox"/> Reading</label>
+    <label for="sport"><input id="sport"type="checkbox"class="checkbox"/> Sports</label>
+    <label for="travel"><input id="travel"type="checkbox"class="checkbox"/> Travelling</label>
+   </fieldset>
+   <label for="reply">Messages for me: <input id="reply"type="textarea"placeholder="comment..."
+   </label>
+    <input type="submit" id="submit"/>
+  </form>
+  </body>
+</html>
